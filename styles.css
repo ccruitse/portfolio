@@ -1,30 +1,31 @@
 /* Custom properties/variables  */
 :root {
-    --main-white: #f0f0f0;
-    --main-gray: #A4969B;
-    --main-blue: #45567d;
+    --main-white: #f5ebe0;
+    --main-gray: #ded6ce;
+    --main-beige: #d6ccc2;
     --main-black:#000000;
   }
   
- /* Body Style*/ 
-  body {
+ /* MAIN Style*/ 
+body {
     margin: 0;
-    padding: 50px;
+    padding: 90px;
     font-family: 'Poppins', sans-serif;
-    font-size: 18px; /* 18px */
+    font-size: 18px; 
     font-weight: 400;
     line-height: 1.4;
     background-color: var(--main-black);
     background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
   }  
 
-/*First divider style*/
-  #main {
+/*NAV BAR style*/
+#main {
     background: var(--main-gray);
   }
   
-/*Navigation bar style*/
-  #navbar {
+#navbar {
     display: flex;
     justify-content: center;
     top: 0;
@@ -35,7 +36,7 @@
     box-shadow: 0 2px 0 rgba(0, 0, 0, 0.4);
   }
   
-  .nav-list {
+.nav-list {
     display: flex;
     justify-content: space-evenly;
     width: 100%;
@@ -45,17 +46,71 @@
     align-items: center;
   }
   
-  .nav-list a {
+.nav-list a {
     display: block;
     font-size: 2rem;
     padding: 2rem;
     font-weight: bold;
   }
   
-  .nav-list a:hover {
+.nav-list a:hover {
     transform: translateY(8px);
     transition: transform 0.3s ease-out;
   }
+
+/* ABOUT style */
+.about-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: right;
+    width: 100%;
+    height: 88rem;
+    background-color: var(--main-gray);
+    border: 10px;
+    border-style:double;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    
+  }
+
+h1 {
+  font-size: 100px;
+  text-align: left;
+  margin: 50px 50px;
+  line-height: 100px;
+  font-family: 'Poppins', sans-serif;
+}
+  
+p {
+  font-size: 100px;
+  text-align: right;
+  margin: auto 70px 50px 0;
+  font-family: 'Poppins', sans-serif;
+  line-height: 100px;
+}
+
+#photo {
+  display: inline-block;
+  width: 30rem;
+  height: 30rem;
+  margin: auto auto;
+}
+  /*.about-section > p {
+    font-size: 3rem;
+    font-weight: 200;
+    font-style: italic;
+    color: var(--main-gray);
+  }
+
+.about-section > h1 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    text-align: right;
+    font-size: 6rem;
+  }
+*/
+
 
 
 
@@ -117,20 +172,6 @@
   
   
   
-  h1,
-  h2 {
-    font-family: 'Raleway', sans-serif;
-    font-weight: 700;
-    text-align: center;
-  }
-  
-  h1 {
-    font-size: 6rem;
-  }
-  
-  h2 {
-    font-size: 4.2rem;
-  }
   
   ul {
     list-style: none;
@@ -148,25 +189,7 @@
   
   
   
-  /* Welcome section */
   
-  .welcome-section {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 50vh;
-    background-color: var(--main-gray);
-    background-image: linear-gradient(62deg, #181719 0%, #181719 100%);
-  }
-  
-  .welcome-section > p {
-    font-size: 3rem;
-    font-weight: 200;
-    font-style: italic;
-    color: var(--main-gray);
-  }
   
   /* Projects section */
   
